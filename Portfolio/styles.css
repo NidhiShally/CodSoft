@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.html{
+    scroll-behavior: smooth;
+}
+ 
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    }
+.navbar ul{
+   display: flex;
+   list-style: none;
+   margin: 20px 0px;
+    
+}
+ .navbar ul li {
+   font-family: century;
+   font-size: 1.1 rem;
+   font-weight: bold;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+.icon{
+    display: inline-flex;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a{
+   height: 50px;
+   width: 50px;
+   text-align: center;
+   text-decoration: none;
+   border-radius: 50%;
+   margin: 0 30px;
+   
+  }
+.icon .fa-whatsapp{
+    font-size:50px;
+    color: green;
+ }
+ .icon .fa-twitter {
+    font-size:50px;
+    color: skyblue;
+ }
+  .icon .fa-linkedin{
+ font-size:50px;
+    color: lightskyblue;
+}
+.icon .fa-telegram{
+ font-size:50px;
+    color: lightskyblue;
+}
+.fa-instagram{
+ font-size:50px;
+    color: lightpink;
+}
+
+#home{
+    
+    display: flex;
+    flex-direction: column;
+    height: 700px; 
+   justify-content: center;
+   align-items: center;
+   color: black;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('images.jpg') no-repeat center center/cover;
+    height: 800px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid white;*/
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+
+}
+.heading{
+    font-family: century;
+    font-size: 4rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+ .btn1{
+padding: 30px;
+height: 40px;
+width: 150px;
+    border:none;
+  color: black;
+    background-color: white;
+  outline: none;
+  border-radius: 5px;
+  font-weight: bold;
+  
+  
+}
+.btn1:hover{
+    background-color: red;
+    transition: 0.3s;
+    justify-content: space-around;
+    
+}
+
+.btn2{
+    padding: 30px;
+    height: 40px;
+width: 150px;
+    border:none;
+  color: black;
+    background-color: white;
+  outline: none;
+  border-radius: 5px;
+  font-weight: bold;
+ 
+  
+}
+.btn2:hover{
+    background-color: red;
+    transition: 0.3s;
+    justify-content: space-around;
+
+}
+
+
+
+  #About{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 02px;
+    background-color: gray;
+    color: white;
+  }
+  #pic{
+    display: flex;
+  }
+  #pic img{
+    width:400px;
+    height: 400px;
+  }
+  #intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+  }
+  #intro h2{
+    font-size: 5rem;
+    margin-bottom: 40px;
+  }
+  #intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px ;
+  }
+  #intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  #Skills{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    color: white;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 02px;
+  }
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+
+  }
+  .gallery img{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+  }
+  #Projects{
+    display: flex;
+    flex-direction: column;
+    padding: 05px;
+    background-color: gray;
+    margin-bottom: 02px;
+  }
+
+  
+  .row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  .box{
+    display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 350px;
+  border: 1px solid black;
+  margin: 5px;
+  align-items: center ;
+  text-align: justify;
+  padding: 5px;
+  border- border-radius: 05px;
+  background: linear-gradient(to top, rgb(255, 45, 45) 50%, white 50%);
+  background-size: 100% 200%;
+  transition: all .4s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: red;
+
+}
+#Contact{
+    padding: 20px;
+   text-align: center;
+    justify-content: center;
+    align-items: center; 
+    color: white ;
+    background-color: gray;
+    
+    
+   
+}
+.Contact-info .h3{
+   
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+
+
+}
+.Contact-info .p{
+    margin-bottom: 20px;
+    color: black;text-align: center;
+
+
+}
+.Contact-info .i{
+    color: white;
+    margin-right: 10px;
+}
